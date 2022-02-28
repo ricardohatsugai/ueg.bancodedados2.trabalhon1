@@ -2,7 +2,8 @@ program Comercial;
 
 uses
   Vcl.Forms,
-  UFrm_Principal in 'UFrm_Principal.pas' {Frm_Principal};
+  UFrm_Principal in 'UFrm_Principal.pas' {Frm_Principal},
+  UDM_Conexao in 'UDM_Conexao.pas' {DM_Conexao: TDataModule};
 
 {$R *.res}
 
