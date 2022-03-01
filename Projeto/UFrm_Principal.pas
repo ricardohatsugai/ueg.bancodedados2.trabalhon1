@@ -20,6 +20,8 @@ type
     Listar1: TMenuItem;
     Bevel1: TBevel;
     Shape1: TShape;
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -32,5 +34,19 @@ var
 implementation
 
 {$R *.dfm}
+
+uses UDM_Conexao;
+
+procedure TFrm_Principal.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  DM_Conexao.ADOConnection1.Connected := False;
+  FreeAndNil(DM_Conexao);
+end;
+
+procedure TFrm_Principal.FormShow(Sender: TObject);
+begin
+     Application.CreateForm(TDM_Conexao, DM_Conexao);
+     DM_Conexao.ADOConnection1.Connected := True;
+end;
 
 end.

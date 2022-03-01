@@ -14,6 +14,8 @@ object Frm_Principal: TFrm_Principal
   Menu = MainMenu1
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnClose = FormClose
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Bevel1: TBevel
