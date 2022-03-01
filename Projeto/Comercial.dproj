@@ -109,6 +109,15 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="UDM_Conexao_Cidades.pas">
+            <Form>DM_Conexao_Cidades</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UFrm_Cidades_Listagem.pas">
+            <Form>Frm_Cidade_Listagem</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
